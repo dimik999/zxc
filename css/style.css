@@ -32,6 +32,10 @@ body {
   font-family: 'Futura PT Book', Arial, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .h1 {
   font-family: 'Futura PT Heavy', Arial, sans-serif;
   font-size: 3.125rem;
@@ -57,4 +61,33 @@ body {
   font-size: 1.125rem;
   line-height: 120%;
   color: var(--text-color);
+}
+
+.btn {
+  padding: 5px 13px;
+  border: 1px solid var(--ui-color);
+  font-size: 0.875rem;
+  line-height: 120%;
+  color: var(--text-color);
+  background-color: var(--ui-color);
+  box-shadow: 3px 3px 5px rgba(244, 114, 32, 0.4);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: transparent;
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+.btn_transparent {
+  background-color: transparent;
+}
+
+.btn_transparent:hover {
+  background-color: var(--ui-color);
 }
